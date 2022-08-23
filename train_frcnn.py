@@ -9,7 +9,7 @@ import pickle
 import re
 
 from keras import backend as K
-from tensoflow.keras.optimizers import Adam, SGD, RMSprop
+from tensorflow.keras.optimizers import Adam, SGD, RMSprop
 from tensorflow.keras.layers import Input
 from tensorflow.keras.models import Model
 from keras_frcnn import config, data_generators
