@@ -8,7 +8,8 @@ Adapted from code contributed by BigMoyan.
 from __future__ import print_function
 from __future__ import absolute_import
 
-from keras.layers import Input, Add, Dense, Activation, Flatten, Convolution2D, MaxPooling2D, ZeroPadding2D, \
+import tensorflow as tf
+from tf.keras.layers import Input, Add, Dense, Activation, Flatten, Convolution2D, MaxPooling2D, ZeroPadding2D, \
     AveragePooling2D, TimeDistributed
 
 from keras import backend as K

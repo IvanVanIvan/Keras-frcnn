@@ -1,5 +1,6 @@
-from keras.engine import Layer, InputSpec
-from keras import initializers, regularizers
+import tensorflow as tf
+from tf.keras.layers import Layer, InputSpec
+from tf.keras import initializers, regularizers
 from keras import backend as K
 
 

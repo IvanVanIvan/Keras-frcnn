@@ -1,5 +1,7 @@
 from keras import backend as K
-from keras.objectives import categorical_crossentropy
+import tensoflow as tf
+from tf.keras.losses import CategoricalCrossentropy
+cce = CategoricalCrossentropy()
 
 if K.common.image_dim_ordering() == 'tf':
 	import tensorflow as tf
@@ -52,4 +54,4 @@ def class_loss_regr(num_classes):
 
 
 def class_loss_cls(y_true, y_pred):
-	return lambda_cls_class * K.mean(categorical_crossentropy(y_true[0, :, :], y_pred[0, :, :]))
+	return lambda_cls_class * K.mean(cce(y_true[0, :, :], y_pred[0, :, :]))
